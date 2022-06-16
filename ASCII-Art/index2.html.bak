@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	   <title>Alpha ASCII Art</title>
+	   <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+
+<div class="container">
+            <div class="card">
+                <h1 style="text-align: center;" class="card_title"><b>Alpha ASCII Art</b></h1>
+                <form class="card_form">
+				    <label for="filepicker">Image</label>
+	                <input type="file" id="filepicker" accept=".png,.jpeg,.jpg">
+                </form>
+                <label for="threshold">Threshold</label>
+	            <input type="range" id="threshold" min="0" max="255" value="127">
+	            <br>
+	           <label for="width">Width</label>
+	           <input type="number" id="width" value="100" step="10"> characters (>500 gets laggy)
+
+	           <div id="output" contenteditable="true"></div>
+
+            </div>
+    
+</body>
+<script src="dist/index.js" type="module"></script>
+</html>
